@@ -2,10 +2,9 @@ from django.db import models
 
 # Create your models here.  
 
-class Article(models.Model) :
+class Post(models.Model) :
     title  = models.CharField(max_length = 100) 
-    author = models.CharField(max_length=100)
-    email = models.EmailField(max_length=100)
+    body = models.CharField(max_length=100)
     date = models.DateTimeField(auto_now_add=True)
 
 
